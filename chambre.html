@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://saschanaz.github.io/fixedviewport.js/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>221 B Baker Street</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="img/fav.png" />
+
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="popCost.css">-->
+
+
+    <script src="fixedviewport.js"></script>
+    <script>
+        "use strict";
+        FixedViewport.polyfill(1920, 1080);
+        document.addEventListener("DOMContentLoaded", () => {
+            const native = document.getElementById("native");
+            native.textContent = FixedViewport.hasNativeSupport() ? "native" : "polyfill";
+        });
+    </script>
+    <style>
+        #divDiapo {
+            display: none;
+            background: #ddd
+        }
+    </style>
+</head>
+
+<body id="principale">
+    <div class="content" id="chambre">
+
+
+        <div id="ecran">[]</div>
+        
+        <a href="index.html">
+            <img src="img/loupe.png" alt="Bouton Accueil" id="accueil" />
+        </a>
+
+
+
+<!-- ..................... Main .................... -->
+
+        <!-- ..... Main Menu ..... -->
+
+
+        <div id="porteInterieur">
+            <a href="index.html" class="prendTous"></a>
+            <div id="portesInterieur" class="prendTous">
+                <a href="index.html"></a>
+            </div>
+        </div>
+
+
+        <!-- ..... Secondary Menu ..... -->
+
+        <div id="miniTiroirHaut">
+            <button type="button" class="afficher" onclick="currentSlide(1)">
+            </button>
+        </div>
+
+        <div id="coffret">
+            <button type="button" class="afficher" onclick="currentSlide(2)">
+            </button>
+        </div>
+
+        <div id="miniTiroirBas">
+            <button type="button" class="afficher" onclick="currentSlide(3)">
+            </button>
+        </div>
+
+        <div id="tiroirHaut">
+            <button type="button" class="afficher" onclick="currentSlide(4)">
+            </button>
+        </div>
+
+        <div id="tiroirBas">
+            <button type="button" class="afficher" onclick="currentSlide(5)">
+            </button>
+        </div>
+
+        <div id="miroir"></div>
+        
+        <div id="pensoir"></div>
+
+        <div id="carte2"></div>
+
+        <div id="photo"></div>
+
+        <!-- ..... Slide ..... -->
+
+        <div id="divDiapo">
+            <div class="slideshow-container">
+
+                <button id="chambreButton" type="button" onclick="closeSlides()">X</button>
+
+                <div class="mySlides fade">
+
+                    <img src="img/logo.png" style="width:30%">
+                    <div class="text">
+                        <h1>Quotidien</h1>
+                        <p>Ce sont les habits quotidiens de Sherlock Holmes composé souvent d'un long meteau gris avec un ensemble de costume sobre (noir, gris...). Il peut être accompagné d'une canne stylisé et d'un chapeau haut de forme. </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/logo.png" style="width:40%">
+                    <div class="text">
+                        <h1>Enquete 1</h1>
+                        <p>Ce sont les habits quotidiens de Sherlock Holmes composé souvent d'un long meteau gris avec un ensemble de costume sobre (noir, gris...). Il peut être accompagné d'une canne stylisé et d'un chapeau haut de forme. </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="img/logo.png" style="width:40%">
+                    <div class="text">
+                        <h1>Enquete 2</h1>
+                        <p>Ce sont les habits quotidiens de Sherlock Holmes composé souvent d'un long meteau gris avec un ensemble de costume sobre (noir, gris...). Il peut être accompagné d'une canne stylisé et d'un chapeau haut de forme. </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="img/logo.png" style="width:40%">
+                    <div class="text">
+                        <h1>Enquete 3</h1>
+                        <p>Ce sont les habits quotidiens de Sherlock Holmes composé souvent d'un long meteau gris avec un ensemble de costume sobre (noir, gris...). Il peut être accompagné d'une canne stylisé et d'un chapeau haut de forme. </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="img/logo.png" style="width:40%">
+                    <div class="text">
+                        <h1>Enquete 4</h1>
+                        <p>Ce sont les habits quotidiens de Sherlock Holmes composé souvent d'un long meteau gris avec un ensemble de costume sobre (noir, gris...). Il peut être accompagné d'une canne stylisé et d'un chapeau haut de forme. </p>
+                    </div>
+                </div>
+
+                <button class="prev direction" onclick="prevSlides()">
+                    <</button>
+                <button class="next direction" onclick="nextSlides()">></button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="JS/full.js"></script>
+        
+        
+
+
+    <script>
+        var indexSlide = 0;
+
+        function nextSlides() {
+            showSlides(++indexSlide);
+        }
+
+
+        function prevSlides() {
+            showSlides(--indexSlide);
+        }
+
+        function currentSlide(n) {
+            showSlides(indexSlide = n);
+        }
+
+        function showSlides(n) {
+            console.log('*****************')
+            document.getElementById('divDiapo').style.display = 'block';
+            var slides = document.getElementsByClassName("mySlides");
+            console.log(slides, n, indexSlide)
+            indexSlide = n;
+            if (indexSlide > slides.length) {
+                indexSlide = 1
+            }
+            if (indexSlide < 1) {
+                indexSlide = slides.length
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[indexSlide - 1].style.display = "block";
+            // dots[slideIndex - 1].className += " active";
+        }
+
+        function closeSlides() {
+            console.log('$$$$$$$$$$$$$$$$')
+            var slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            document.getElementById('divDiapo').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

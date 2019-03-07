@@ -1,0 +1,157 @@
+<!-- saved from url=(0044)http://saschanaz.github.io/fixedviewport.js/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>221 B Baker Street</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="img/fav.png" />
+
+    <link rel="stylesheet" href="style.css">
+    <script src="fixedviewport.js"></script>
+    <script>
+        "use strict";
+        FixedViewport.polyfill(1920, 1080);
+        document.addEventListener("DOMContentLoaded", () => {
+            const native = document.getElementById("native");
+            native.textContent = FixedViewport.hasNativeSupport() ? "native" : "polyfill";
+        });
+    </script>
+</head>
+
+<body id="principale">
+
+    <div class="content" id="index">
+
+        <!-- Musique Ambiance-->
+
+        <audio autoplay loop id="ambiance">
+            <source src="ambiance/feuChemine.mp3" type="audio/mp3">
+        </audio>
+
+        <button id="gramophone"><img class="gramo" src="img/son.png" /></button>
+        <button id="gramophoneMute"><img class="gramo" src="img/sonMute.png" /></button>
+
+        <!-- Pop Up -->
+        <button id="aide" type="button">?</button>
+
+        <div id="ecran">[]</div>
+
+        <div id="pop1" class="popUp">
+            <button id="quitter" type="button">X</button>
+
+            <h1>Sherlock Holmes est mort !</h1>
+            <p>Bienvenue dans l'apartement de Sherlock Holmes, le 221B. Vous incarnez Watson, son meilleur ami qui fait son deuil.</p>
+            <p>Visitez cet appartement qui lui est chère pour découvrir l'histoire de Sherlock Holmes</p>
+            <button id="suivant" type="button"><img src="img/boutonSuivant.png" /></button>
+        </div>
+
+        <div id="pop2" class="popUp" style="display:none;">
+
+            <button id="quitter1" type="button">X</button>
+
+            <img src="" />
+            <p id="dossierEnquete">Le bureau de Sherlock Holmes, c'est là qu'il rangeait ses vieilles enquêtes.</p>
+
+            <img src="" />
+            <p id="costume">La chambre de Sherlock Holmes, c'est ici qu'il range tous ses costumes.</p>
+
+            <img src="" />
+            <p id="histoire">Le fauteuil de Sherlock, on pourrait presque le voir encore assis dessus. </br>
+                Allez le rencontrez, il te parlera peut-être de lui !</p>
+
+            <img src="" />
+            <p id="fleche">Clique sur la flèche pour revenir en arrière à tous moment.</p>
+            <img src="img/loupe.png" id="flecheImg" />
+
+            <button id="cestpartie" type="button"><img src="img/boutonCestPartie.png" /></button>
+
+        </div>
+
+
+        <!-- ..................... Main .................... -->
+
+        <!-- ..... Main Menu ..... -->
+
+        <div id="fauteuil">
+            <a href="fauteuil.html" class="prendTous"></a>
+            <div id="fauteuils"></div>
+        </div>
+
+        <div id="porte">
+            <a href="chambre.html" class="prendTous"></a>
+            <div id="portes"></div>
+        </div>
+
+        <div id="bureau2">
+            <a href="bureau.html" class="prendTous"></a>
+            <div id="bureau2s"></div>
+        </div>
+
+        <!-- ..... Secondary Menu ..... -->
+
+
+        <button type="button" id="livre"></button>
+        <div class="fade infade sousTitre" id="livres" style="display: none;">
+            <p>Qu'est ce que je vais faire de tous ces livres ? "Les 10 manières de tuer quelqu'un avec une cuillère", ... qui voudrait de ça ?</p>
+        </div>
+
+        <button id="fiole"></button>
+        <div class="fade sousTitre" id="fioles" style="display: none;">
+            <p>E</p>
+        </div>
+
+        <button id="crane"></button>
+        <div class="fade sousTitre" id="cranes" style="display: none;">
+            <p>Qu'est ce que je vais faire de tous ces livres ? "Les 10 manières de tuer quelqu'un avec une cuillère", ... qui voudrait de ça ?</p>
+        </div>
+
+        <button id="violon"></button>
+        <div class="fade sousTitre" id="violons" style="display: none;">
+            <p>Qu'est ce que je vais faire de tous ces livres ? "Les 10 manières de tuer quelqu'un avec une cuillère", ... qui voudrait de ça ?</p>
+        </div>
+
+        <button id="pistolet"></button>
+        <div class="fade sousTitre" id="pistolets" style="display: none;">
+            <p>Qu'est ce que je vais faire de tous ces livres ? "Les 10 manières de tuer quelqu'un avec une cuillère", ... qui voudrait de ça ?</p>
+        </div>
+
+        <button id="tableau"></button>
+        <div class="fade sousTitre" id="tableaux" style="display: none;">
+            <p>Qu'est ce que je vais faire de tous ces livres ? "Les 10 manières de tuer quelqu'un avec une cuillère", ... qui voudrait de ça ?</p>
+        </div>
+
+        <button id="carte"></button>
+        <div class="fade sousTitre" id="cartes" style="display: none;">
+            <p>Qu'est ce que je vais faire de tous ces livres ? "Les 10 manières de tuer quelqu'un avec une cuillère", ... qui voudrait de ça ?</p>
+        </div>
+
+        <button id="coffre"></button>
+        <div class="fade sousTitre" id="coffres" style="display: none;">
+            <p>Qu'est ce que je vais faire de tous ces livres ? "Les 10 manières de tuer quelqu'un avec une cuillère", ... qui voudrait de ça ?</p>
+        </div>
+
+        <button id="cigare"></button>
+        <div class="fade sousTitre" id="cigares" style="display: none;">
+            <p>Qu'est ce que je vais faire de tous ces livres ? "Les 10 manières de tuer quelqu'un avec une cuillère", ... qui voudrait de ça ?</p>
+        </div>
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="JS/ambiance.js"></script>
+    <script src="JS/popUp.js"></script>
+    <script src="JS/full.js"></script>
+    <script src="JS/coLivre.js"></script>
+
+
+
+</body>
+
+</html>

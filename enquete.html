@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://saschanaz.github.io/fixedviewport.js/ -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>221 B Baker Street</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="img/fav.png" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="fixedviewport.js"></script>
+    <script>
+        "use strict";
+        FixedViewport.polyfill(1920, 1080);
+        document.addEventListener("DOMContentLoaded", () => {
+            const native = document.getElementById("native");
+            native.textContent = FixedViewport.hasNativeSupport() ? "native" : "polyfill";
+        });
+    </script>
+
+</head>
+
+<body id="principale">
+    <div class="content" id="bureau">
+
+       <div id="ecran">[]</div>
+        
+        <a href="index.html">
+           <img src="img/loupe.png" alt="Bouton Accueil" id="accueil" />
+        </a>
+
+        <audio autoplay loop id="ambiance">
+            <source src="ambiance/feuChemine.mp3" type="audio/mp3">
+        </audio>
+
+        <button id="gramophone"><img id="gramo" src="img/son.png" /></button>
+
+        <!-- ..................... Main .................... -->
+
+        
+        <div id="rose" class="thumb ombre" onclick="clicksound.playclip()" onMouseover="mouseoversound.playclip()">
+            <video preload="auto" loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+                <source src="/chienBaskerville/chienBaskerville.mp4" type="video/mp4">
+            </video>
+
+            <a href="rose.html" class="prendTous"></a>
+        </div>
+
+        <div id="affabulant" class="thumb ombre" onclick="clicksound.playclip()" onMouseover="mouseoversound.playclip()">
+            <video preload="auto" loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+                <source src="/chienBaskerville/chienBaskerville.mp4" type="video/mp4">
+            </video>
+
+            <a href="affabulant.html" class="prendTous"></a>
+        </div>
+
+        <div id="signe" class="thumb ombre" onclick="clicksound.playclip()" onMouseover="mouseoversound.playclip()">
+            <video preload="auto" loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+                <source src="/chienBaskerville/chienBaskerville.mp4" type="video/mp4">
+            </video>
+
+            <a href="signe.html" class="prendTous"></a>
+        </div>
+
+        <div id="chien" class="thumb ombre" onclick="clicksound.playclip()" onMouseover="mouseoversound.playclip()">
+            <video preload="auto" loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+                <source src="/chienBaskerville/chienBaskerville.mp4" type="video/mp4">
+            </video>
+
+            <a href="chien.html" class="prendTous"></a>
+        </div>
+
+
+        <div id="napoleon" class="thumb ombre" onclick="clicksound.playclip()" onMouseover="mouseoversound.playclip()">
+            <video preload="auto" loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+                <source src="/chienBaskerville/chienBaskerville.mp4" type="video/mp4">
+            </video>
+
+            <a href="napoleon.html" class="prendTous"></a>
+        </div>
+
+
+        <div id="identite" class="thumb ombre" onclick="clicksound.playclip()" onMouseover="mouseoversound.playclip()">
+            <video preload="auto" loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
+                <source src="/chienBaskerville/chienBaskerville.mp4" type="video/mp4">
+            </video>
+
+            <a href="identite.html" class="prendTous"></a>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="JS/full.js"></script>
+
+    <script>
+        //Au survol de la souris les vidéos se lancent
+
+        var html5_audiotypes = {
+            "mp3": "audio/mpeg",
+            "mp4": "audio/mp4",
+            "ogg": "audio/ogg",
+            "wav": "audio/wav"
+        }
+
+        function createsoundbite(sound) {
+            var html5audio = document.createElement('audio')
+            if (html5audio.canPlayType) {
+                var sourceel = document.createElement('source')
+                sourceel.setAttribute('src', arguments[i])
+                if (arguments[i].match(/\.(\w+)$/i))
+                    sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                html5audio.appendChild(sourceel)
+            }
+            html5audio.load()
+            html5audio.playclip = function () {
+                html5audio.pause()
+                html5audio.currentTime = 0
+                html5audio.play()
+            }
+            return html5audio
+        } else {
+            return {
+                playclip: function () {
+                    throw new Error("Your browser doesn't support HTML5 audio unfortunately")
+                }
+            }
+        }
+        }
+    </script>
+
+
+</body>
+
+</html>
