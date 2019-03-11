@@ -81,6 +81,7 @@ body {
     right: 20px;
     padding: 0;
     letter-spacing: 5px;
+    cursor:pointer;
 }
 
 
@@ -100,6 +101,7 @@ body {
     padding: 1px;
     z-index: 6;
     outline: none;
+    cursor:pointer;
 }
 
 
@@ -111,6 +113,7 @@ body {
     left: 5px;
     width: 100px;
     height: 70px;
+    cursor:pointer;
 }
 
 
@@ -124,6 +127,7 @@ body {
     top: 0;
     left: 0;
     width: 80px;
+    cursor:pointer;
 }
 
 #gramophone {
@@ -174,6 +178,7 @@ body {
     margin: 0;
     right: 0;
     bottom: 0;
+    cursor:pointer;
 }
 
 
@@ -196,6 +201,7 @@ body {
     position: absolute;
     left: 20px;
     bottom: 20px;
+    cursor:pointer;
 }
 
 #dossierEnquete {
@@ -353,6 +359,7 @@ body {
     top: 440px;
     left: 810px;
     opacity: 0.5;
+    cursor:pointer;
 }
 
 #fiole {
@@ -365,6 +372,7 @@ body {
     top: 550px;
     right: 1000px;
     opacity: 0.5;
+    cursor:pointer;
 }
 
 #crane {
@@ -377,6 +385,7 @@ body {
     top: 400px;
     right: 820px;
     opacity: 0.5;
+    cursor:pointer;
 }
 
 #violon {
@@ -389,6 +398,7 @@ body {
     top: 700px;
     left: 550px;
     opacity: 0.5;
+    cursor:pointer;
 }
 
 #pistolet {
@@ -401,6 +411,7 @@ body {
     top: 470px;
     left: 550px;
     opacity: 0.5;
+    cursor:pointer;
 }
 
 #tableau {
@@ -413,6 +424,7 @@ body {
     top: 190px;
     right: 670px;
     opacity: 0.5;
+    cursor:pointer;
 }
 
 #carte {
@@ -424,6 +436,7 @@ body {
     position: absolute;
     top: 400px;
     right: 170px;
+    cursor:pointer;
 }
 
 #coffre {
@@ -436,6 +449,7 @@ body {
     bottom: 270px;
     left: 790px;
     opacity: 0.5;
+    cursor:pointer;
 }
 
 #cigare {
@@ -448,6 +462,7 @@ body {
     top: 660px;
     right: 850px;
     opacity: 0.5;
+    cursor:pointer;
 }
 
 
