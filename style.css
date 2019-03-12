@@ -88,6 +88,13 @@ button{
     cursor:pointer;
 }
 
+#aide, #ecran, #gramophone, #gramophoneMute, #accueil{
+  opacity: 0.7;
+}
+
+#aide:hover, #ecran:hover, #gramophone:hover, #gramophoneMute:hover, #accueil:hover{
+  opacity: 1;
+}
 
 /* Aide */
 
