@@ -607,6 +607,19 @@ button{
     top: 60px;
     left: -15px;
 }
+/*----------------------- Enquete ---------------------*/
+
+.preuve img{
+  width:500px;
+  filter:grayscale(1);
+  background-image: url();
+}
+
+.suspect img{
+  width:200px;
+}
+
+
 
 
 /*----------------------- Chambre ---------------------*/
