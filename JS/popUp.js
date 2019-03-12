@@ -14,15 +14,15 @@ function initialiser(e) {
     document.getElementById("pop2").style.display = "none";
 
 
-    aide.addEventListener("click", afficher);
+    aide.addEventListener("click", afficher1);
     aide2.addEventListener("click", afficher2);
     aide3.addEventListener("click", close);
 
-    quitter.addEventListener("click", cacher);
+    quitter.addEventListener("click", cacher0);
     quitter1.addEventListener("click", cacher1);
 }
 
-function afficher() {
+function afficher1() {
     document.getElementById("pop1").style.display = "block";
     document.getElementById("aide").style.display = "none";
 
@@ -39,7 +39,7 @@ function close() {
 
 }
 
-function cacher() {
+function cacher0() {
     document.getElementById("aide").style.display = "block";
     document.getElementById("pop2").style.display = "none";
     document.getElementById("pop1").style.display = "none";

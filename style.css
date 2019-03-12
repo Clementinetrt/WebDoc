@@ -34,6 +34,10 @@ body {
     overflow: hidden;
 }
 
+button{
+  outline:none;
+}
+
 .content {
     width: 100%;
     height: 100%;
@@ -130,7 +134,7 @@ body {
     cursor:pointer;
 }
 
-#gramophone {
+#gramophone, #gramophoneMute {
     position: absolute;
     background-color: transparent;
     border-color: transparent;
@@ -138,6 +142,10 @@ body {
     left: 1650px;
     width: 80px;
     height: 100px;
+}
+
+#gramophoneMute{
+  display: none;
 }
 
 

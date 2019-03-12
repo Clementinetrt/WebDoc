@@ -5,31 +5,26 @@ document.addEventListener("DOMContentLoaded", initialiser); //Mise en place de l
 function initialiser(e) {
 
     var son = document.getElementById("gramophone");
-
     son.addEventListener("click", stop);
-   // son.addEventListener("click", play);
-
 }
-
-
 
 function stop() {
+    var gramo = document.getElementById("ambiance");
+    gramo.pause();
 
-        audioElement.pause();
+    var mute = document.getElementById("gramophoneMute");
+    mute.addEventListener("click", play);
 
-    /*document.getElementById('gramophoneMute').style.display = "block";
-    document.getElementById('gramophone').style.display = "none";*/
-
+    document.getElementById('gramophoneMute').style.display = "block";
+    document.getElementById('gramophone').style.display = "none";
 }
 
-/*function play() {
-     if (audioElement.paused) {
-        audioElement.play();
-    }
-    else {
-        audioElement.pause();
-    }
+function play() {
+
+    var gramoMute = document.getElementById("ambiance");
+    gramoMute.play();
+
     document.getElementById('gramophoneMute').style.display = "none";
     document.getElementById('gramophone').style.display = "block";
 
-}*/
+}
