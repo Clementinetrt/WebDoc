@@ -36,8 +36,20 @@
 <body id="principale">
     <div class="content" id="chambre">
 
+      <!-- Musique Ambiance-->
 
-        <div id="ecran">[]</div>
+      <audio autoplay loop id="ambiance">
+          <source src="ambiance/feuChemine.mp3" type="audio/mp3">
+      </audio>
+
+      <button id="gramophone"><img class="gramo" src="img/son.png" /></button>
+      <button id="gramophoneMute"><img class="gramo" src="img/sonMute.png" /></button>
+
+      <!-- Ecran -->
+
+      <div id="ecran">[]</div>
+
+      <!-- Flèche -->
 
         <a href="index.html">
             <img src="img/loupe.png" alt="Bouton Accueil" id="accueil" />
@@ -53,7 +65,7 @@
         <div id="porteInterieur">
             <a href="index.html" class="prendTous"></a>
             <div id="portesInterieur" class="prendTous">
-                <a href="index.html"></a>
+                <a href="index.html" class="prendTous"></a>
             </div>
         </div>
 
@@ -171,6 +183,8 @@
 
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="JS/ambiance.js"></script>
     <script src="JS/full.js"></script>
     <script src="JS/sousTitre.js"></script>
 

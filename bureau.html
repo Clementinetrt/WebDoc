@@ -29,21 +29,28 @@
 <body id="principale">
     <div class="content" id="bureau">
 
-       <div id="ecran">[]</div>
-        
+      <!-- Musique Ambiance-->
+
+      <audio autoplay loop id="ambiance">
+          <source src="ambiance/feuChemine.mp3" type="audio/mp3">
+      </audio>
+
+      <button id="gramophone"><img class="gramo" src="img/son.png" /></button>
+      <button id="gramophoneMute"><img class="gramo" src="img/sonMute.png" /></button>
+
+      <!-- Ecran -->
+
+      <div id="ecran">[]</div>
+
+      <!-- Flèche -->
+
         <a href="index.html">
-           <img src="img/loupe.png" alt="Bouton Accueil" id="accueil" />
+            <img src="img/loupe.png" alt="Bouton Accueil" id="accueil" />
         </a>
 
-        <audio autoplay loop id="ambiance">
-            <source src="ambiance/feuChemine.mp3" type="audio/mp3">
-        </audio>
+  <!-- ..................... Main .................... -->
 
-        <button id="gramophone"><img id="gramo" src="img/son.png" /></button>
 
-        <!-- ..................... Main .................... -->
-
-        
         <div id="rose" class="thumb ombre" onclick="clicksound.playclip()" onMouseover="mouseoversound.playclip()">
             <video preload="auto" loop id="video1" onmouseover="this.play()" onmouseout="this.pause()">
                 <source src="/chienBaskerville/chienBaskerville.mp4" type="video/mp4">
@@ -96,6 +103,8 @@
 
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="JS/ambiance.js"></script>
     <script src="JS/full.js"></script>
 
     <script>

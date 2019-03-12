@@ -108,7 +108,7 @@ button{
     position: absolute;
     border: 1px solid transparent;
     top: 4px;
-    right: 120px;
+    right: 220px;
     padding: 1px;
     z-index: 6;
     outline: none;
@@ -127,10 +127,6 @@ button{
     cursor:pointer;
 }
 
-
-/*----------------------- Accueil ---------------------*/
-
-
 /*-- Ambiance --*/
 
 .gramo {
@@ -146,7 +142,7 @@ button{
     background-color: transparent;
     border-color: transparent;
     top: 15px;
-    left: 1650px;
+    left: 1730px;
     width: 80px;
     height: 100px;
 }
@@ -155,6 +151,7 @@ button{
   display: none;
 }
 
+/*----------------------- Accueil ---------------------*/
 
 /*-- PopUp 1 --*/
 
