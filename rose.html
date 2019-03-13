@@ -29,113 +29,121 @@
 <body id="principale">
     <div class="content" id="bureau">
 
-      <!-- Musique Ambiance-->
+        <!-- Musique Ambiance-->
 
-      <audio autoplay loop id="ambiance">
-          <source src="ambiance/feuChemine.mp3" type="audio/mp3">
-      </audio>
+        <audio autoplay loop id="ambiance">
+            <source src="ambiance/feuChemine.mp3" type="audio/mp3">
+        </audio>
 
-      <button id="gramophone"><img class="gramo" src="img/son.png" /></button>
-      <button id="gramophoneMute"><img class="gramo" src="img/sonMute.png" /></button>
+        <button id="gramophone"><img class="gramo" src="img/son.png" /></button>
+        <button id="gramophoneMute"><img class="gramo" src="img/sonMute.png" /></button>
 
-      <!-- Ecran -->
+        <!-- Ecran -->
 
-      <div id="ecran">[]</div>
+        <div id="ecran">[]</div>
 
-      <!-- Flèche -->
+        <!-- Flèche -->
 
         <a href="bureau.html">
             <img src="img/loupe.png" alt="Enquêtes" id="accueil" />
-
-
-            <p><strong>Nom :</strong> Hope</p>
-            <p><strong>Prénom :</strong> Jefferson</p>
-            <p><strong>Age :</strong> 38 ans</p>
-            <p><strong>Sexe :</strong> Homme</p>
-            <p><strong>Taille :</strong> 1m78</p>
-            <p><strong>Origine :</strong> Etats-Unis (Mormon)</p>
         </a>
 
-  <!-- ..................... Main .................... -->
+        <!-- ..................... Main .................... -->
 
-  <div class="suspect">
-    <img src="/etudeRose/suspect.jpg" alt="Photo du suspect"/>
+        <div class="suspect">
+            <h1>Suspect</h1>
 
-  </div>
-  <div class="preuve">
-    <img src="/etudeRose/indice1.jpg" alt="Photo peruve n°1 : Le mot Rache gratter sur le sol"/>
-    <img src="/etudeRose/indice-2.png" alt="Photo peruve n°2 : Flacon avec 2 pillules"/>
-    <img src="/etudeRose/" alt="Photo peruve n°3 : Alliance"/>
+            <img src="/etudeRose/suspect.jpg" alt="Photo du suspect" />
+            <div id="donnees">
+                <p><strong>Nom :</strong> Hope</p>
+                <p><strong>Prénom :</strong> Jefferson</p>
+                <p><strong>Age :</strong> 38 ans</p>
+                <p><strong>Sexe :</strong> Homme</p>
+                <p><strong>Taille :</strong> 1m78</p>
+                <p><strong>Origine :</strong> Etats-Unis</p>
+            </div>
 
-  </div>
-  <div class="resume"></div>
-  <button class="plus"></button>
+        </div>
 
-  <img src=""/>
+        <div class="preuve">
 
-  <div id="enSigne">
-    <a class="signe couper prendTous" href="signe.html"><img src="/chienBaskerville/apercuChien.png"/></a>
-  </div>
+            <h1>Preuves</h1>
 
-  <div id="enChien">
-    <a class="chien couper prendTous" href="chien.html"><img src="" /></a>
-  </div>
+                <img src="/etudeRose/apercuRose.png" alt="Photo peruve n°1 : Le mot Rache gratter sur le sol" />
+                <img src="/etudeRose/indice1.png" alt="Photo peruve n°2 : Flacon avec 2 pillules" />
+                <img src="/etudeRose/indice2.png" alt="Photo peruve n°3 : Alliance" />
 
-  <div id="enNapoleon">
-    <a class="napoleon couper prendTous" href="napoleon.html"><img src="" /></a>
-  </div>
+        
 
-  <div id="enIdentite">
-    <a class="identite couper prendTous" href="identite.html"><img src="" /></a>
-  </div>
+        </div>
+        <div class="resume"></div>
+        <button class="plus"></button>
 
-  <div id="enAffabulant">
-    <a class="affabulant couper prendTous" href="affabulant.html"><img src="" /></a>
-  </div>
+        <img src="" />
+
+        <div id="enSigne">
+            <a class="signe couper prendTous" href="signe.html"><img src="/chienBaskerville/apercuChien.png" /></a>
+        </div>
+
+        <div id="enChien">
+            <a class="chien couper prendTous" href="chien.html"><img src="" /></a>
+        </div>
+
+        <div id="enNapoleon">
+            <a class="napoleon couper prendTous" href="napoleon.html"><img src="" /></a>
+        </div>
+
+        <div id="enIdentite">
+            <a class="identite couper prendTous" href="identite.html"><img src="" /></a>
+        </div>
+
+        <div id="enAffabulant">
+            <a class="affabulant couper prendTous" href="affabulant.html"><img src="" /></a>
+        </div>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 
-    <script src="JS/ambiance.js"></script>
-    <script src="JS/full.js"></script>
+        <script src="JS/ambiance.js"></script>
+        <script src="JS/full.js"></script>
 
-    <script>
-        //Au survol de la souris les vidéos se lancent
+        <script>
+            //Au survol de la souris les vidéos se lancent
 
-        var html5_audiotypes = {
-            "mp3": "audio/mpeg",
-            "mp4": "audio/mp4",
-            "ogg": "audio/ogg",
-            "wav": "audio/wav"
-        }
-
-        function createsoundbite(sound) {
-            var html5audio = document.createElement('audio')
-            if (html5audio.canPlayType) {
-                var sourceel = document.createElement('source')
-                sourceel.setAttribute('src', arguments[i])
-                if (arguments[i].match(/\.(\w+)$/i))
-                    sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
-                html5audio.appendChild(sourceel)
+            var html5_audiotypes = {
+                "mp3": "audio/mpeg",
+                "mp4": "audio/mp4",
+                "ogg": "audio/ogg",
+                "wav": "audio/wav"
             }
-            html5audio.load()
-            html5audio.playclip = function () {
-                html5audio.pause()
-                html5audio.currentTime = 0
-                html5audio.play()
-            }
-            return html5audio
-        } else {
-            return {
-                playclip: function () {
-                    throw new Error("Your browser doesn't support HTML5 audio unfortunately")
+
+            function createsoundbite(sound) {
+                var html5audio = document.createElement('audio')
+                if (html5audio.canPlayType) {
+                    var sourceel = document.createElement('source')
+                    sourceel.setAttribute('src', arguments[i])
+                    if (arguments[i].match(/\.(\w+)$/i))
+                        sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                    html5audio.appendChild(sourceel)
+                }
+                html5audio.load()
+                html5audio.playclip = function () {
+                    html5audio.pause()
+                    html5audio.currentTime = 0
+                    html5audio.play()
+                }
+                return html5audio
+            } else {
+                return {
+                    playclip: function () {
+                        throw new Error("Your browser doesn't support HTML5 audio unfortunately")
+                    }
                 }
             }
-        }
-        }
-    </script>
+            }
+        </script>
 
 
 </body>

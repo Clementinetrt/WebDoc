@@ -34,8 +34,12 @@ body {
     overflow: hidden;
 }
 
-button{
-  outline:none;
+button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .content {
@@ -45,7 +49,7 @@ button{
 }
 
 #bureau {
-    background-image: url(img/bureaudessus.png);
+    background-image: url(img/bureau.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -85,16 +89,25 @@ button{
     right: 20px;
     padding: 0;
     letter-spacing: 5px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#aide, #ecran, #gramophone, #gramophoneMute, #accueil{
-  opacity: 0.7;
+#aide,
+#ecran,
+#gramophone,
+#gramophoneMute,
+#accueil {
+    opacity: 0.7;
 }
 
-#aide:hover, #ecran:hover, #gramophone:hover, #gramophoneMute:hover, #accueil:hover{
-  opacity: 1;
+#aide:hover,
+#ecran:hover,
+#gramophone:hover,
+#gramophoneMute:hover,
+#accueil:hover {
+    opacity: 1;
 }
+
 
 /* Aide */
 
@@ -112,7 +125,7 @@ button{
     padding: 1px;
     z-index: 6;
     outline: none;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -124,8 +137,9 @@ button{
     left: 5px;
     width: 100px;
     height: 70px;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 
 /*-- Ambiance --*/
 
@@ -134,10 +148,11 @@ button{
     top: 0;
     left: 0;
     width: 80px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#gramophone, #gramophoneMute {
+#gramophone,
+#gramophoneMute {
     position: absolute;
     background-color: transparent;
     border-color: transparent;
@@ -147,11 +162,13 @@ button{
     height: 100px;
 }
 
-#gramophoneMute{
-  display: none;
+#gramophoneMute {
+    display: none;
 }
 
+
 /*----------------------- Accueil ---------------------*/
+
 
 /*-- PopUp 1 --*/
 
@@ -190,7 +207,7 @@ button{
     margin: 0;
     right: 0;
     bottom: 0;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -213,7 +230,7 @@ button{
     position: absolute;
     left: 20px;
     bottom: 20px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #dossierEnquete {
@@ -318,27 +335,27 @@ button{
     right: 11px;
 }
 
-.sousTitre p{
-  color: white;
-  font-size:30px;
-  margin-top: 5px;
+.sousTitre p {
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
 }
 
-.sousTitre{
+.sousTitre {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
-    height:130px;
+    height: 130px;
     position: absolute;
-    bottom:0px;
+    bottom: 0px;
     width: 1920;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.imgCom{
+.imgCom {
     width: 950px;
     height: 60px;
-    margin:-37px auto 0 auto;
+    margin: -37px auto 0 auto;
 }
 
 .animCom {
@@ -371,7 +388,7 @@ button{
     top: 440px;
     left: 810px;
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #fiole {
@@ -384,7 +401,7 @@ button{
     top: 550px;
     right: 1000px;
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #crane {
@@ -397,7 +414,7 @@ button{
     top: 400px;
     right: 820px;
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #violon {
@@ -410,7 +427,7 @@ button{
     top: 700px;
     left: 550px;
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #pistolet {
@@ -423,7 +440,7 @@ button{
     top: 470px;
     left: 550px;
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #tableau {
@@ -436,7 +453,7 @@ button{
     top: 190px;
     right: 670px;
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #carte {
@@ -448,7 +465,7 @@ button{
     position: absolute;
     top: 400px;
     right: 170px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #coffre {
@@ -461,7 +478,7 @@ button{
     bottom: 270px;
     left: 790px;
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 #cigare {
@@ -474,7 +491,7 @@ button{
     top: 660px;
     right: 850px;
     opacity: 0.5;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
@@ -488,20 +505,20 @@ button{
     background-image: url(img/etudeRouge.png);
     background-size: cover;
     background-position: center;
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     transform: rotate(15deg);
     position: absolute;
-    top: 355px;
-    left: 610px;
+    top: 250px;
+    left:450px;
 }
 
 #rose video {
-    height: 150px;
-    width: 180px;
+    height: 170px;
+    width: 210px;
     position: absolute;
-    top: 10px;
-    left: 60px;
+    top: 20px;
+    left: 70px;
     background-color: black;
 }
 
@@ -509,19 +526,19 @@ button{
     background-image: url(img/signe-4.png);
     background-size: cover;
     background-position: center;
-    width: 190px;
-    height: 250px;
+    width: 250px;
+    height: 300px;
     position: absolute;
-    top: 510px;
-    left: 520px;
+    top: 430px;
+    left: 320px;
 }
 
 #signe video {
-    height: 160px;
-    width: 140px;
+    height: 185px;
+    width: 160px;
     position: absolute;
-    top: 35px;
-    left: 17px;
+    top: 40px;
+    left: 35px;
     background-color: black;
 }
 
@@ -529,20 +546,20 @@ button{
     background-image: url(chienBaskerville/chienBaskerville.png);
     background-size: cover;
     background-position: center;
-    width: 290px;
-    height: 300px;
+    width: 360px;
+    height: 290px;
     transform: rotate(-13deg);
     position: absolute;
-    left: 600px;
+    left: 400px;
     top: 650px;
 }
 
 #chien video {
-    height: 150px;
-    width: 180px;
+    height: 190px;
+    width: 230px;
     position: absolute;
-    left: 60px;
-    top: 70px;
+    left: 70px;
+    top: 45px;
     background-color: black;
 }
 
@@ -550,19 +567,19 @@ button{
     background-image: url(img/napoleon.png);
     background-size: cover;
     background-position: center;
-    width: 180px;
-    height: 300px;
+    width: 210px;
+    height: 330px;
     transform: rotate(4deg);
     position: absolute;
-    bottom: 480px;
-    left: 1010px;
+    bottom: 530px;
+    left: 950px;
 }
 
 #napoleon video {
-    height: 158px;
-    width: 160px;
+    height: 180px;
+    width: 185px;
     background-color: black;
-    left: 11px;
+    left: 12px;
     top: 52px;
     position: absolute;
 }
@@ -571,20 +588,20 @@ button{
     background-image: url(img/affaireIdentite.png);
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 250px;
+    width: 230px;
+    height: 280px;
     transform: rotate(-5deg);
     position: absolute;
-    bottom: 290px;
-    right: 840px;
+    bottom: 330px;
+    right: 920px;
 }
 
 #identite video {
-    height: 160px;
-    width: 170px;
+    height: 180px;
+    width: 191px;
     position: absolute;
-    top: 29px;
-    left: 20px;
+    top: 32px;
+    left: 25px;
     background-color: black;
 }
 
@@ -592,34 +609,88 @@ button{
     background-image: url(img/affabulant.png);
     background-size: cover;
     background-position: center;
-    width: 220px;
-    height: 230px;
+    width: 290px;
+    height: 300px;
     transform: rotate(4deg);
     position: absolute;
-    top: 700px;
-    left: 1000px;
+    top: 680px;
+    left: 890px;
 }
 
 #affabulant video {
-    height: 110px;
-    width: 250px;
+    height: 140px;
+    width: 270px;
     position: absolute;
-    top: 60px;
-    left: -15px;
+    top: 80px;
+    left: 10px;
+    background-color: black;
 }
+
+
 /*----------------------- Enquete ---------------------*/
 
+.suspect h1 {
+    font-size: 45px;
+    margin-left: 35px;    
+}
+
+.suspect {
+    background-image: url(img/fondPortrait.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 490px;
+    height: 410px;
+    
+    position: absolute;
+    top: 235px;
+    left: 300px;
+}
+.suspect img {
+    width: 180px;
+    margin-left: 25px;
+    position: absolute;
+    top:100px;
+}
+
+.suspect p {
+    font-size :24px;
+    line-height: 8px;
+}
+
+#donnees{
+    height: 300px;
+    position: absolute;
+    top:110px;
+    left:215px;
+}
+
+.preuve{
+    width:450px;
+    height: 300px;
+    border:10px solid green;
+    position: absolute;
+    bottom :150px;
+    left: 320px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.preuve h1{
+    font-size: 35px;
+    margin-left: 35px;
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    
+}
+
 .preuve img{
-  width:500px;
-  filter:grayscale(1);
-  background-image: url();
+    margin-top: 100px;
+    width: 160px;
+    height: 150px;
+    margin-right: -25px;
+ 
 }
-
-.suspect img{
-  width:200px;
-}
-
-
 
 
 /*----------------------- Chambre ---------------------*/
@@ -864,7 +935,7 @@ button{
 
 /* Fade animation */
 
-.fade{
+.fade {
     animation-name: fade;
     animation-duration: 4s;
 }
