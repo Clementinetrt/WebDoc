@@ -69,17 +69,31 @@
 
             <h1>Preuves</h1>
 
-                <img src="/etudeRose/apercuRose.png" alt="Photo peruve n°1 : Le mot Rache gratter sur le sol" />
-                <img src="/etudeRose/indice1.png" alt="Photo peruve n°2 : Flacon avec 2 pillules" />
-                <img src="/etudeRose/indice2.png" alt="Photo peruve n°3 : Alliance" />
-
-        
+            <img src="/etudeRose/apercuRose.png" alt="Photo peruve n°1 : Le mot Rache gratter sur le sol" />
+            <img src="/etudeRose/indice1.png" alt="Photo peruve n°2 : Flacon avec 2 pillules" />
+            <img src="/etudeRose/indice2.png" alt="Photo peruve n°3 : Alliance" />
 
         </div>
-        <div class="resume"></div>
-        <button class="plus"></button>
 
-        <img src="" />
+        <div class="resume">
+            <h1>Rapport </br> n°1</h1>
+            <p>lgkjdsdfg ukfydfg lukdxfgf yuktdfg lgyjkhdhgf </p>
+            <button class="plus"></button>
+            <img src="/img/trombone.png" />
+            <img src="/chienBaskerville/apercuChien.png" />
+        </div>
+
+        <button class="plus"><img src="/img/boutonCestPartie.png"/></button>
+
+        <div class="enquetePlus">
+            <p><strong>Une Etude en Rouge</strong></br>
+                </br>lgkjdsdfg ukfydfg lukdxfgf yuktdfg lgyjkhdhgf dhjhjdjbhdskj dskjdsjbdsnjds hjdsjdsjdskj dshjdshjsdnjdsjdshj dshjdshjdsjdshj dshjdshjdshjdchj d </p>
+
+            <button class="moins"><img src="/img/boutonCestPartie.png"/></button>
+
+        </div>
+
+        <!-- Le menu sur la Droite -->
 
         <div id="enSigne">
             <a class="signe couper prendTous" href="signe.html"><img src="/chienBaskerville/apercuChien.png" /></a>
@@ -108,42 +122,7 @@
 
         <script src="JS/ambiance.js"></script>
         <script src="JS/full.js"></script>
-
-        <script>
-            //Au survol de la souris les vidéos se lancent
-
-            var html5_audiotypes = {
-                "mp3": "audio/mpeg",
-                "mp4": "audio/mp4",
-                "ogg": "audio/ogg",
-                "wav": "audio/wav"
-            }
-
-            function createsoundbite(sound) {
-                var html5audio = document.createElement('audio')
-                if (html5audio.canPlayType) {
-                    var sourceel = document.createElement('source')
-                    sourceel.setAttribute('src', arguments[i])
-                    if (arguments[i].match(/\.(\w+)$/i))
-                        sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
-                    html5audio.appendChild(sourceel)
-                }
-                html5audio.load()
-                html5audio.playclip = function () {
-                    html5audio.pause()
-                    html5audio.currentTime = 0
-                    html5audio.play()
-                }
-                return html5audio
-            } else {
-                return {
-                    playclip: function () {
-                        throw new Error("Your browser doesn't support HTML5 audio unfortunately")
-                    }
-                }
-            }
-            }
-        </script>
+        <script src="JS/enquete.js"></script>
 
 
 </body>
