@@ -707,6 +707,7 @@ a {
     width: 100px;
     z-index: 6;
     transform: rotate(19deg);
+    z-index:4;
 }
 
 .resume h1{
@@ -714,7 +715,7 @@ a {
     font-size: 50px;
     top:250px;
     right: 720px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .resume img:last-child{
@@ -723,7 +724,7 @@ a {
     left: 740px;
     width: 280px;
     transform:  rotate(-4deg);
-    z-index:2;
+    z-index:3;
 }
 
 .resume p{
@@ -732,6 +733,7 @@ a {
     left:830px;
     font-size:30px;
     width: 440px;
+     z-index:3;
 }
 
 .plus{
@@ -741,11 +743,13 @@ a {
     bottom:280px;
     right:850px;
     cursor: pointer;
+    z-index:3;    
 }
 
 .plus img{
     width: 130px;
     cursor: pointer;
+    z-index:3;
 }
 
 .enquetePlus{
@@ -757,6 +761,7 @@ a {
     display: none;
     z-index: 7;
     width: 380px;
+    z-index:3;
 }
 
 .moins {
@@ -766,29 +771,42 @@ a {
     bottom:-450px;
     right:0;
     cursor: pointer;
+    z-index:3;
 }
 
 .moins img{
     width: 130px;
     cursor: pointer;
+    z-index:3;
+}
+
+#fondEnquetes{
+    width: 475px;
+    position: absolute;
+    top: 240px;
+    right: 690px;
+    z-index: 2;
 }
 
 #enSigne{
     transform: rotate(90deg);
     position: absolute;
-    top: 200px;
+    top: 195px;
     right: 650px;
     cursor: pointer;
+    z-index:1;
 }
 
 #enSigne img{
     width: 250px;
     height: 290px;
     cursor: pointer;
+     z-index:1;
 }
 
 #enSigne:hover{
     animation :montre 2s forwards;
+     z-index:1;
 }
 
 @keyframes montre {

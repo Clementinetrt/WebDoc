@@ -1,6 +1,6 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", initialiser); //Mise en place de l'écouteur indiquant la fin de construction du DOM 
+document.addEventListener("DOMContentLoaded", initialiser);  
 
 function initialiser(e) {
 
@@ -20,9 +20,16 @@ function initialiser(e) {
 function toggleEnquete() {
 
     var enqueteCache = document.getElementsByClassName('enquetePlus');
+    var enqueteResumes = document.getElementsByClassName('resume');
 
     for (var enqueteCaches of enqueteCache) {
         enqueteCaches.style.display = "block";
+        
+    }
+    
+    for (var enqueteResume of enqueteResumes) {
+        enqueteResume.style.display = "none";
+        
     }
 
 }
@@ -30,10 +37,16 @@ function toggleEnquete() {
 function montreEnquete() {
 
     var enqueteMontre = document.getElementsByClassName('enquetePlus');
+    var enqueteResumer = document.getElementsByClassName('resume');
 
     for (var enqueteMontres of enqueteMontre) {
 
         enqueteMontres.style.display = "none";
+    }
+    
+    for (var enqueteResumers of enqueteResumer) {
+        enqueteResumers.style.display = "block";
+        
     }
 
 }
